@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Title from './components/title';
+import Footer from './components/footer';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello World!!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Title text="Savings Calculator"/>
+      <div className="inputs-container">[INPUTS_PLACEHOLDER]</div>
+      <div className="summary-container">[SUMMARY_PLACEHOLDER]</div>
+      <div className="chart-container">[CHART_PLACEHOLDER]</div>
+      <Footer text="Made by Mariam Zikaria"/>
     </div>
   );
 }
