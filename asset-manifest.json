@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/savings-calculator/static/css/main.31d6cfe0.css",
-    "main.js": "/savings-calculator/static/js/main.ada5d63b.js",
+    "main.js": "/savings-calculator/static/js/main.667c2e7e.js",
     "index.html": "/savings-calculator/index.html",
-    "main.ada5d63b.js.map": "/savings-calculator/static/js/main.ada5d63b.js.map"
+    "main.667c2e7e.js.map": "/savings-calculator/static/js/main.667c2e7e.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.ada5d63b.js"
+    "static/js/main.667c2e7e.js"
   ]
 }
