@@ -1,6 +1,7 @@
 import './App.css';
 import Title from './components/title';
 import Footer from './components/footer';
+import Chart from './components/chart';
 
 const App = () => {
   return (
@@ -14,7 +15,9 @@ const App = () => {
       <div className="summary-container">[SUMMARY_PLACEHOLDER]
         <h>SUMMARY_PLACEHOLDER</h>
       </div>
-      <div className="chart-container">[CHART_PLACEHOLDER]</div>
+      <div className="chart-container">
+        <Chart/>
+      </div>
       <Footer text="Made by Mariam Zikaria"/>
     </div>
   );
