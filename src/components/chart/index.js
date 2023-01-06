@@ -36,8 +36,23 @@ const mockData = {
   ]
 }
 
-const Chart = ({ data }) => {
-  return <Line data={mockData} />;
+const getDataByProjection = projection => {
+  return {
+    labels: projection.map(({ month }) => month),
+    datasets: [
+      {
+        label: 'Amount Saved',
+        data: projection.map(({ amountSaved }) => amountSaved),
+        borderColor: 'green'
+      }
+    ]
+  }
+}
+
+const Chart = ({ projection }) => {
+  const data = getDataByProjection(projection);
+
+  return <Line data={data} />;
 }
 
 export default Chart;
