@@ -1,0 +1,47 @@
+#root {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.app {
+  flex: 0 0 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  background-color: #b8e994;
+  font-size: 1.5em;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #303952;
+  border: 2px solid #303952;
+}
+
+.input-box::placeholder {
+  color: #38ada9;
+}
+
+.summary-container {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.dollar-amount {
+  font-weight: bold;
+}
+
+.chart-container {
+  width: 100%;
+  margin-bottom: 20px;
+}

@@ -26,10 +26,11 @@ const App = () => {
   const hasFilledForm = months && amount;
 
   return (
-    <div>
+    <div className="app">
       <Title text="Savings Calculator"/>
       <div className="inputs-container">
         <input
+          className="input-box"
           min="0"
           type="number"
           placeholder="Enter months"
@@ -37,6 +38,7 @@ const App = () => {
           onChange={handleChangeMonths}
         />
         <input
+          className="input-box"
           min="0"
           type="number"
           placeholder="Enter amount"
@@ -47,7 +49,7 @@ const App = () => {
       {hasFilledForm && (
         <Fragment>
           <div className="summary-container">
-            <div>Amount saved in {months} months: {months * amount}</div>
+            <div>Amount saved in {months} months: <span className="dollar-amount">${months * amount}</span></div>
           </div>
           <div className="chart-container">
             <Chart projection={projection} />

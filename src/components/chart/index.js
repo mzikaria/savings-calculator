@@ -21,29 +21,37 @@ ChartJS.register(
   Legend
 );
 
-const mockData = {
-  labels: ['Jan', 'Feb', 'March'],
-  datasets: [
-    {
-      label: 'savings amount',
-      data: [1, 2, 3],
-      borderColor: 'red'
+const options = {
+  scales: {
+    y: {
+      grid: {
+        color: "#6a89cc"
+      },
+      ticks: {
+        color: "#3c6382",
+        beginAtZero: true
+      }
     },
-    {
-      label: 'another savings',
-      data: [4, 5, 9]
+    x: {
+      grid: {
+        color: "#6a89cc"
+      },
+      ticks: {
+        color: "#3c6382",
+        beginAtZero: true
+      }
     }
-  ]
+  }
 }
 
 const getDataByProjection = projection => {
   return {
-    labels: projection.map(({ month }) => month),
+    labels: [0, ...projection.map(({ month }) => month)],
     datasets: [
       {
         label: 'Amount Saved',
-        data: projection.map(({ amountSaved }) => amountSaved),
-        borderColor: 'green'
+        data: [0, ...projection.map(({ amountSaved }) => amountSaved)],
+        borderColor: '#3c6382'
       }
     ]
   }
@@ -52,7 +60,7 @@ const getDataByProjection = projection => {
 const Chart = ({ projection }) => {
   const data = getDataByProjection(projection);
 
-  return <Line data={data} />;
+  return <Line data={data} options={options} />;
 }
 
 export default Chart;

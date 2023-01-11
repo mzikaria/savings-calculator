@@ -1,7 +1,8 @@
 import React from 'react';
+import './index.css';
 
 const Title = ({ text }) => (
-  <h1>{text}</h1>
+  <div className="title">{text}</div>
 );
 
 export default Title;
