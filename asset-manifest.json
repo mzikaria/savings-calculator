@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/savings-calculator/static/css/main.ec9f6316.css",
-    "main.js": "/savings-calculator/static/js/main.ae6ebb74.js",
+    "main.css": "/savings-calculator/static/css/main.6ce4ab73.css",
+    "main.js": "/savings-calculator/static/js/main.42f0637a.js",
     "index.html": "/savings-calculator/index.html",
-    "main.ec9f6316.css.map": "/savings-calculator/static/css/main.ec9f6316.css.map",
-    "main.ae6ebb74.js.map": "/savings-calculator/static/js/main.ae6ebb74.js.map"
+    "main.6ce4ab73.css.map": "/savings-calculator/static/css/main.6ce4ab73.css.map",
+    "main.42f0637a.js.map": "/savings-calculator/static/js/main.42f0637a.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec9f6316.css",
-    "static/js/main.ae6ebb74.js"
+    "static/css/main.6ce4ab73.css",
+    "static/js/main.42f0637a.js"
   ]
 }

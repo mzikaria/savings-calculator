@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.ec9f6316.css","mappings":"AAAA,KAEE,wBAAyB,CACzB,aAAc,CAFd,iCAGF","sources":["index.css"],"sourcesContent":["body {\n  font-family: 'Montserrat', sans-serif;\n  background-color: #ea8685;\n  color: #303952;\n}"],"names":[],"sourceRoot":""}
