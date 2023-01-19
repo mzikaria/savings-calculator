@@ -19,6 +19,13 @@
   margin-bottom: 20px;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .inputs-container{
+    flex-direction: column;
+  }
+}
+
 .input-box {
   background-color: #b8e994;
   font-size: 1.5em;
@@ -37,6 +44,12 @@
   margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+  .summary-container {
+    font-size: 1em;
+  }
+}
+
 .dollar-amount {
   font-weight: bold;
 }
@@ -44,4 +57,11 @@
 .chart-container {
   width: 100%;
   margin-bottom: 20px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .chart-container {
+    width: 90%;
+  }
 }
